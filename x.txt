@@ -1,0 +1,102 @@
+library001, old
+library002, library
+
+
+
+git sparse-checkout disable
+git add .
+git commit -m "X"
+git push -u origin import-20250208-001
+
+
+
+
+
+
+
+
+
+
+
+curl -L https://github.com/X-Financial-Technologies/Library/archive/refs/heads/main.zip -o repo.zip
+unzip repo.zip 'Library-main/Ondo Finance/*'
+mv 'Library-main/Ondo Finance' .
+rm -rf Library-main repo.zip
+
+
+
+
+
+
+mv 'Ondo Finance' library001
+
+
+
+curl -L https://github.com/X-Financial-Technologies/Library/archive/refs/heads/main.zip -o repo.zip
+unzip repo.zip 'Library-main/Ondo Finance/*'
+mv 'Library-main/Ondo Finance' .
+rm -rf Library-main repo.zip
+
+
+
+
+https://github.com/amr080/Library/tree/main/Ondo%20Finance
+https://github.com/amr080/Library.git
+
+curl -L https://github.com/amr080/Library/archive/refs/heads/main.zip -o repo.zip
+unzip repo.zip 'Library-main/Ondo Finance/*'
+mv 'Library-main/Ondo Finance' library002
+rm -rf Library-main repo.zip
+
+
+
+
+rm -rf addresses.txt notes.txt ondo_short_term_us_government_bond_fund ondo_us_dollar_yield urls.txt x
+
+rm -rf *
+
+
+
+
+
+
+
+
+/Library/tree/main/Ondo%20Finance
+gh repo clone X-Financial-Technologies/Library
+https://github.com/X-Financial-Technologies/Library.git
+
+
+https://github.com/X-Financial-Technologies/Library/tree/main/Ondo%20Finance
+
+
+
+git init - Create new git repository
+git remote add origin [url] - Connect to the source repo
+git sparse-checkout init - Set up sparse checkout
+git sparse-checkout set "Ondo Finance" - Tell git to only get the Ondo Finance folder
+git pull origin main - Download just that folder's contents
+
+
+git clone --no-checkout https://github.com/X-Financial-Technologies/Library.git temp
+cd temp
+git sparse-checkout init
+git sparse-checkout set "Ondo Finance"
+git checkout
+rm -rf .git
+
+
+
+sudo apt update
+sudo apt-get install subversion
+
+
+
+
+svn export https://github.com/X-Financial-Technologies/Library/tree/main/Ondo%20Finance
+https://github.com/X-Financial-Technologies/Library/tree/eb030afa09ee97cb5fa5f5b6095f9a21f2343e2e/Ondo%20Finance
+
+curl -L https://github.com/X-Financial-Technologies/Library/archive/refs/heads/main.zip -o repo.zip
+unzip repo.zip 'Library-main/Ondo Finance/*'
+mv 'Library-main/Ondo Finance' .
+rm -rf Library-main repo.zip
