@@ -38,7 +38,7 @@ git push --set-upstream origin web-20250208
 ondo-git-web-20250208-amr080s-projects.vercel.app
 ondo-93nmov3qt-amr080s-projects.vercel.app
 
-
+;sdifughh;isdfaugv;iadfsuewg
 STEPS
 1 wget -r -k -E -l 10 -p -np -w 1 -e robots=off https://ondo.finance/
 2 uploaded to github repo
