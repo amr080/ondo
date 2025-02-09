@@ -40,3 +40,16 @@ ondo-git-web-20250208-amr080s-projects.vercel.app/ondo.finance
 
 
 git push --set-upstream origin web-20250208
+
+
+
+web-20250208-002
+git checkout -b web-20250208-003
+mv ondo.finance/* .
+rm -rf ondo.finance import001
+find . -type f -name "*.html" -exec sed -i 's|<head>|<head><base href="/ondo.finance/">|g' {} \;
+find . -type f -name "*.html" -exec sed -i 's|/_next/|/ondo.finance/_next/|g' {} \;
+git add .
+git commit -m "Restructure layout for deployment with base path /ondo.finance/"
+git push -u origin web-20250208-003
+vercel --prod
