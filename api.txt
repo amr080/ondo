@@ -1,0 +1,167 @@
+LINK https://docs.ondo.finance/_next/static/chunks/main-b9ff23c154b0c27b.js
+
+9423: function(e, t) {
+    "use strict";
+    function r(e) {
+        return "/api" === e || !!(null == e ? void 0 : e.startsWith("/api/"))
+    }
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    }),
+    Object.defineProperty(t, "isAPIRoute", {
+        enumerable: !0,
+        get: function() {
+            return r
+        }
+    })
+},
+
+
+
+API PARAMETERS
+9423
+/api/
+r
+isAPIRoute
+__esModule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================================
+
+if ((0,
+j.isAPIRoute)(g))
+    return z({
+        url: o,
+        router: this
+    }),
+    new Promise( () => {}
+    );
+let w = l || await this.fetchComponent(g).then(e => ({
+    Component: e.page,
+    styleSheets: e.styleSheets,
+    __N_SSG: e.mod.__N_SSG,
+    __N_SSP: e.mod.__N_SSP
+}))
+
+
+====================================================================================
+
+
+let n = r(8754)._(r(3479))
+    , o = {
+    client: "client",
+    server: "server",
+    edgeServer: "edge-server"
+}
+    , a = {
+    [o.client]: 0,
+    [o.server]: 1,
+    [o.edgeServer]: 2
+}
+    , i = "/_not-found"
+    , u = "" + i + "/page"
+    , l = "phase-export"
+    , s = "phase-production-build"
+    , c = "phase-production-server"
+    , f = "phase-development-server"
+    , d = "phase-test"
+    , p = "phase-info"
+    , h = "pages-manifest.json"
+    , m = "app-paths-manifest.json"
+    , _ = "app-path-routes-manifest.json"
+    , g = "build-manifest.json"
+    , y = "app-build-manifest.json"
+    , v = "functions-config-manifest.json"
+    , b = "subresource-integrity-manifest"
+    , P = "next-font-manifest"
+    , E = "export-marker.json"
+    , S = "export-detail.json"
+    , O = "prerender-manifest.json"
+    , R = "routes-manifest.json"
+    , j = "images-manifest.json"
+    , w = "required-server-files.json"
+    , T = "_devPagesManifest.json"
+    , x = "middleware-manifest.json"
+    , A = "_devMiddlewareManifest.json"
+    , M = "react-loadable-manifest.json"
+    , C = "font-manifest.json"
+    , I = "server"
+    , N = ["next.config.js", "next.config.mjs"]
+    , L = "BUILD_ID"
+    , D = ["/_document", "/_app", "/_error"]
+    , k = "public"
+    , U = "static"
+    , F = "__NEXT_DROP_CLIENT_FILE__"
+    , B = "__NEXT_BUILTIN_DOCUMENT__"
+    , H = "__barrel_optimize__"
+    , W = "client-reference-manifest"
+    , q = "server-reference-manifest"
+    , G = "middleware-build-manifest"
+    , z = "middleware-react-loadable-manifest"
+    , V = "interception-route-rewrite-manifest"
+    , X = "main"
+    , $ = "" + X + "-app"
+    , Y = "app-pages-internals"
+    , K = "react-refresh"
+    , Q = "amp"
+    , J = "webpack"
+    , Z = "polyfills"
+    , ee = Symbol(Z)
+    , et = "webpack-runtime"
+    , er = "edge-runtime-webpack"
+    , en = "__N_SSG"
+    , eo = "__N_SSP"
+    , ea = "https://fonts.googleapis.com/"
+    , ei = [{
+    url: ea,
+    preconnect: "https://fonts.gstatic.com"
+}, {
+    url: "https://use.typekit.net",
+    preconnect: "https://use.typekit.net"
+}]
+    , eu = {
+    name: "Times New Roman",
+    xAvgCharWidth: 821,
+    azAvgWidth: 854.3953488372093,
+    unitsPerEm: 2048
+}
+    , el = {
+    name: "Arial",
+    xAvgCharWidth: 904,
+    azAvgWidth: 934.5116279069767,
+    unitsPerEm: 2048
+}
+    , es = ["/500"]
+    , ec = 1
+    , ef = 6e3
+    , ed = {
+    client: "client",
+    server: "server"
+}
+
+
+
+
+
+
