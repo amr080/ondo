@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>APY Calculations Methodology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Inter:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="../assets/built/screen.css%3Fv=6dd0abf84e.css">
+
+    <link rel="icon" href="../content/images/size/w256h256/2022/12/Ondo-Icon-Black-L.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="Ondo Finance">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="APY Calculations Methodology">
+    <meta property="og:description" content="There are so many ways to calculate projected APY, after all estimating the future is hard! In this post we will briefly go over our methodology for calculating APYs.
+
+
+Upcoming Vaults
+
+To calculate the APY for upcoming vaults we take the previous 7 day yield and extrapolate that for the">
+    <meta property="og:url" content="https://blog.ondo.finance/apy-calculations-methodology/">
+    <meta property="og:image" content="https://blog.ondo.finance/content/images/2022/07/1_inxqGBsrPuCi8t9PMQRyuQ.png">
+    <meta property="article:published_time" content="2021-08-20T19:44:00.000Z">
+    <meta property="article:modified_time" content="2024-01-22T16:25:09.000Z">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="APY Calculations Methodology">
+    <meta name="twitter:description" content="There are so many ways to calculate projected APY, after all estimating the future is hard! In this post we will briefly go over our methodology for calculating APYs.
+
+
+Upcoming Vaults
+
+To calculate the APY for upcoming vaults we take the previous 7 day yield and extrapolate that for the">
+    <meta name="twitter:url" content="https://blog.ondo.finance/apy-calculations-methodology/">
+    <meta name="twitter:image" content="https://blog.ondo.finance/content/images/2022/07/1_inxqGBsrPuCi8t9PMQRyuQ.png">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Ondo Finance">
+    <meta name="twitter:site" content="@OndoFinance">
+    <meta name="twitter:creator" content="@OndoFinance">
+    <meta property="og:image:width" content="744">
+    <meta property="og:image:height" content="567">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Ondo Finance",
+        "url": "https://blog.ondo.finance/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://blog.ondo.finance/content/images/2022/12/Ondo-Logo-White-L-3.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Ondo Finance",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://blog.ondo.finance/content/images/2022/07/Logo_dark-notextl.png",
+            "width": 171,
+            "height": 171
+        },
+        "url": "https://blog.ondo.finance/author/ondofinance/",
+        "sameAs": [
+            "https://ondo.finance/",
+            "https://twitter.com/OndoFinance"
+        ]
+    },
+    "headline": "APY Calculations Methodology",
+    "url": "https://blog.ondo.finance/apy-calculations-methodology/",
+    "datePublished": "2021-08-20T19:44:00.000Z",
+    "dateModified": "2024-01-22T16:25:09.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://blog.ondo.finance/content/images/2022/07/1_inxqGBsrPuCi8t9PMQRyuQ.png",
+        "width": 744,
+        "height": 567
+    },
+    "description": "There are so many ways to calculate projected APY, after all estimating the future is hard! In this post we will briefly go over our methodology for calculating APYs.\n\n\nUpcoming Vaults\n\nTo calculate the APY for upcoming vaults we take the previous 7 day yield and extrapolate that for the duration of the vault.\n\nWe calculate the daily yield from fees. In the case below it would be 0.0025 given the 0.25% trading fee earned by SUSHI LPs.\n\nWe calculate the daily rewards yield\n\nWe take the yield dail",
+    "mainEntityOfPage": "https://blog.ondo.finance/apy-calculations-methodology/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.109">
+    <link rel="alternate" type="application/rss+xml" title="Ondo Finance" href="../rss/index.html">
+    <script defer src="https://cdn.jsdelivr.net/ghost/portal@~2.49/umd/portal.min.js" data-i18n="true" data-ghost="https://blog.ondo.finance/" data-key="170dc7cb9749947c01d2293137" data-api="https://ondo.ghost.io/ghost/api/content/" data-locale="en" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/sodo-search.min.js" data-key="170dc7cb9749947c01d2293137" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/main.css" data-sodo-search="https://ondo.ghost.io/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="https://blog.ondo.finance/webmentions/receive/" rel="webmention">
+    <script defer src="../public/cards.min.js%3Fv=6dd0abf84e"></script>
+    <link rel="stylesheet" type="text/css" href="../public/cards.min.css%3Fv=6dd0abf84e.css">
+    <script defer src="../public/member-attribution.min.js%3Fv=6dd0abf84e"></script><style>:root {--ghost-accent-color: #000000;}</style>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B0RH7LVSJF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B0RH7LVSJF');
+</script>
+</head>
+
+<body class="post-template is-head-b--a_n has-serif-body is-head-brand">
+    <div class="gh-site">
+        <header id="gh-head" class="gh-head gh-outer">
+            <div class="gh-head-inner gh-inner">
+                    <a class="gh-head-description" href="../index.html">Institutional-Grade Finance, Now Onchain.</a>
+
+                <div class="gh-head-brand">
+                    <a class="gh-head-logo" href="../index.html">
+                            <img src="../content/images/2022/12/Ondo-Logo-White-L-3.png" alt="Ondo Finance">
+
+                                <img src="../content/images/2022/12/Ondo-Logo-White-L.png" alt="Ondo Finance">
+                    </a>
+                    <button class="gh-burger"></button>
+                </div>
+
+                <nav class="gh-head-menu">
+                    <ul class="nav">
+    <li class="nav-blog"><a href="../index.html">Blog</a></li>
+    <li class="nav-launch-app"><a href="https://ondo.finance/">Launch App →</a></li>
+</ul>
+
+                </nav>
+
+                <div class="gh-head-actions">
+                        <a class="gh-head-btn gh-btn gh-primary-btn" href="index.html#/portal/signup" data-portal="signup">Subscribe</a>
+                </div>
+            </div>
+        </header>
+
+
+        
+<main class="gh-main">
+        <article class="gh-article post">
+            <header class="gh-article-header gh-canvas">
+
+                <h1 class="gh-article-title">APY Calculations Methodology</h1>
+
+                    <aside class="gh-article-sidebar">
+            <figure class="gh-author-image">
+                    <img src="../content/images/2022/07/Logo_dark-notextl.png" alt="Ondo Finance">
+            </figure>
+
+            <h4 class="gh-author-name">
+                <a href="../author/ondofinance/index.html">Ondo Finance</a>
+            </h4>
+
+        <div class="gh-article-meta">
+            <time class="gh-article-date" datetime="2021-08-20">Aug 20, 2021</time>
+
+                <span class="gh-article-meta-sep"></span>
+                <span class="gh-article-length">4 min</span>
+        </div>
+    </aside>
+
+
+                    <figure class="gh-article-image">
+                        <img
+                            srcset="../content/images/size/w300/2022/07/1_inxqGBsrPuCi8t9PMQRyuQ.png 300w,
+                                   ../content/images/size/w720/2022/07/1_inxqGBsrPuCi8t9PMQRyuQ.pngg 720w,
+                                  ../content/images/size/w960/2022/07/1_inxqGBsrPuCi8t9PMQRyuQ.pngng 960w,
+                                 ../content/images/size/w1200/2022/07/1_inxqGBsrPuCi8t9PMQRyuQ.pngpng 1200w,
+                                ../content/images/size/w2000/2022/07/1_inxqGBsrPuCi8t9PMQRyuQ.png.png 2000w"
+                            sizes="(max-width: 1200px) 100vw, 1200px"
+                            src="../content/images/size/w1200/2022/07/1_inxqGBsrPuCi8t9PMQRyuQ.png"
+                            alt="APY Calculations Methodology"
+                        >
+                    </figure>
+            </header>
+
+            <section class="gh-content gh-canvas">
+                <p>There are so many ways to calculate projected APY, after all estimating the future is hard! In this post we will briefly go over our methodology for calculating APYs.</p><h3 id="upcoming-vaults">Upcoming Vaults</h3><p>To calculate the APY for upcoming vaults we take the previous 7 day yield and extrapolate that for the duration of the vault.</p><p>We calculate the daily yield from fees. In the case below it would be 0.0025 given the 0.25% trading fee earned by SUSHI LPs.</p><figure class="kg-card kg-image-card"><img src="https://miro.medium.com/max/994/1*1dVRWitAmHuv8dPNfi_fVg.png" class="kg-image" alt="" loading="lazy" width="497" height="126"></figure><p>We calculate the daily rewards yield</p><figure class="kg-card kg-image-card"><img src="https://miro.medium.com/max/1200/1*JsWfWkATjCk13b3u5YvlWw.png" class="kg-image" alt="" loading="lazy" width="600" height="98"></figure><p>We take the yield daily from the fees and rewards and then calculate the 7 day compounded todal.</p><figure class="kg-card kg-image-card"><img src="https://miro.medium.com/max/1400/1*cKE4dQVsTPPZE5mqkHKyPQ.png" class="kg-image" alt="" loading="lazy" width="1013" height="192"></figure><p>Why use 7 days? We know that these fees and rewards can vary quite a bit day to day, so we would not want to use something like 1 days since that would cause large changes in displayed APY. We also don’t want to use too long a period such as a month since that could incorporate yields that are significantly different than current rates.</p><p>This yield over the last 7 days is then extrapolated for the duration of the vault to determine the combined returns of the vault.</p><figure class="kg-card kg-image-card"><img src="https://miro.medium.com/max/1400/1*OvC1GNkigEl8Wtv_fTLeBg.png" class="kg-image" alt="" loading="lazy" width="703" height="166"></figure><p>We then split the returns into the Fixed and Variable Yield Components.</p><figure class="kg-card kg-image-card"><img src="https://miro.medium.com/max/1400/1*inxqGBsrPuCi8t9PMQRyuQ.png" class="kg-image" alt="" loading="lazy" width="744" height="567"></figure><p>Finally in order to calculate the APY from the yield we apply the following formula</p><figure class="kg-card kg-image-card"><img src="https://miro.medium.com/max/1192/1*n5jTTQy68oha5spv62ZN1Q.png" class="kg-image" alt="" loading="lazy" width="596" height="173"></figure><p>This same methodology would be used for Uniswap, except that the rewards there would be zero. Also the trading fee would be 0.30% instead of the 0.25%.</p><h3 id="active-vaults">Active Vaults</h3><p>For active vaults the calculation is a bit more complicated. We want to take the existing returns for the vault so far, and then also project out the future fee and reward yields.</p><p>Reward returns are calculated using the rewards for the vault so far, and then extrapolated for the duration of the vault.</p><figure class="kg-card kg-image-card"><img src="https://miro.medium.com/max/1400/1*sXMrizBssul3KMHffmGp9A.png" class="kg-image" alt="" loading="lazy" width="1028" height="294"></figure><p>Remaining fees are calculated assuming the fee yield since vault start are constant for the remaining duration.</p><figure class="kg-card kg-image-card"><img src="https://miro.medium.com/max/1400/1*vCPC8oB8Yloe7EQ10zOwHw.png" class="kg-image" alt="" loading="lazy" width="1166" height="269"></figure><p>Calculate LP returns since the vault started.</p><figure class="kg-card kg-image-card"><img src="https://miro.medium.com/max/1400/1*7ybd6tHD8lc--KOpsWOMGg.png" class="kg-image" alt="" loading="lazy" width="832" height="247"></figure><p>Finally, we compound these three return components together to get the total returns for the vault.</p><figure class="kg-card kg-image-card"><img src="https://miro.medium.com/max/1400/1*YHYfDsF47V7YmEHOtYwBcg.png" class="kg-image" alt="" loading="lazy" width="1360" height="91"></figure><p>We then split them into the fixed and variable components in terms of the underlying token. Since the token prices for the fixed and variable assets have likely changed since the beginning of the vault we will have to account for that in the yield calculations.</p><figure class="kg-card kg-image-card"><img src="https://miro.medium.com/max/1400/1*ybI4-QKhjo4bGWjvGtfXDA.png" class="kg-image" alt="" loading="lazy" width="986" height="477"></figure><p>Now that we have the yield in the underlying token we can then calculate the APY values given these returns as per the formula.</p><h3 id="keep-up-with-ondo">Keep up with Ondo</h3><p>We have a lot of exciting announcements coming up for Ondo, including the second subscription period and the raising of caps on TVL.</p><p>Follow us on <a href="https://twitter.com/OndoFinance?ref=blog.ondo.finance" rel="noopener ugc nofollow">Twitter</a> and <a href="https://t.me/ondofinance?ref=blog.ondo.finance" rel="noopener ugc nofollow">Telegram</a> to stay up to date with announcements.</p><h3 id="legal-disclaimers">Legal Disclaimers</h3><p><em>This announcement has been written and published by Ondo Finance Inc. and provides no guarantee, commitment, or undertaking to utilize any of its assets, funds, properties or personnel, Ondo Protocol users or other protocol participants. Ondo Finance does not owe, and does not intend to assume, any duties or obligations to Ondo Protocol users or participants, other than duties or obligations arising under laws of general application, such as non-waivable torts.</em></p><p><em>To the maximum extent permitted by applicable law, all software relating to Ondo Protocol is being provided on an as-is, where-is basis, with no representations or warranties being made to Ondo Protocol participants and with no liability to Ondo Finance or any other person involved in the development of Ondo Protocol. The statements set forth in this announcement also are not intended to be representations, warranties, guarantees or assumptions of duty or liability of any kind, and Ondo Finance hereby disclaims the foregoing and will not be liable for any damages arising from use of Ondo Protocol. In the event of any conflict or inconsistency between this announcement or any other communication and the terms of any software license involved in Ondo Protocol, the terms of the software license shall govern to the exclusion of this announcement and such other communications.</em></p><p><em>The forward-looking statements in this announcement are subject to numerous assumptions, risks and uncertainties which are subject to change over time. Such assumptions, risks and uncertainties could cause actual results or developments to differ materially from the results and developments anticipated by us. Even if our anticipated results and developments are realized, such results and developments may nevertheless fail to achieve any or all of the expected benefits anticipated by this announcement. We reserve the right to change the plans, expectations and intentions stated and implied herein at any time and for any reason or no reason, in our sole and absolute discretion, and we undertake no obligation to update publicly or revise any forward-looking statement, whether as a result of new information, future developments or otherwise.</em></p><p><em>This announcement is not intended to provide legal, financial or investment or other advice and we recommend that you do not rely on, and do not make any financial or other decision based on this announcement.</em></p>
+            </section>
+        </article>
+
+    </main>
+
+        <footer class="gh-foot gh-outer">
+            <div class="gh-foot-inner gh-inner">
+                    <section class="gh-subscribe">
+                        <h4 class="gh-subscribe-title">Subscribe to Ondo Finance</h3>
+
+                            <div class="gh-subscribe-description">Don&#x27;t miss out on the latest news.</div>
+
+                        <button class="gh-subscribe-btn gh-btn" data-portal="signup"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3.33332 3.33334H16.6667C17.5833 3.33334 18.3333 4.08334 18.3333 5.00001V15C18.3333 15.9167 17.5833 16.6667 16.6667 16.6667H3.33332C2.41666 16.6667 1.66666 15.9167 1.66666 15V5.00001C1.66666 4.08334 2.41666 3.33334 3.33332 3.33334Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M18.3333 5L9.99999 10.8333L1.66666 5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> Subscribe now</button>
+                    </section>
+
+
+                <div class="gh-copyright">
+                        Ondo Finance © 2025</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="../assets/built/main.min.js%3Fv=6dd0abf84e"></script>
+
+    
+</body>
+
+</html>

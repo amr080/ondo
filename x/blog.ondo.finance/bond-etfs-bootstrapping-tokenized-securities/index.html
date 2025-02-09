@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bond ETFs vs Direct Bond Exposure in Tokenized Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Inter:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="../assets/built/screen.css%3Fv=6dd0abf84e.css">
+
+    <link rel="icon" href="../content/images/size/w256h256/2022/12/Ondo-Icon-Black-L.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="Ondo Finance">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Bond ETFs vs Direct Bond Exposure in Tokenized Products">
+    <meta property="og:description" content="The Ondo Short-Term Investment Grade Bond Fund (OUSG) invests its assets into the Blackrock’s iShares Short Treasury Bond ETF (SHV), a more than $23 billion ETF that trades several hundred million dollars a day, in order to deliver tokenized U.S. Treasuries exposure with direct stablecoin onramp and offramp">
+    <meta property="og:url" content="https://blog.ondo.finance/bond-etfs-bootstrapping-tokenized-securities/">
+    <meta property="og:image" content="https://blog.ondo.finance/content/images/size/w1200/2023/02/blog-4-1.png">
+    <meta property="article:published_time" content="2023-03-28T14:56:45.000Z">
+    <meta property="article:modified_time" content="2024-01-22T16:35:50.000Z">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bond ETFs vs Direct Bond Exposure in Tokenized Products">
+    <meta name="twitter:description" content="The Ondo Short-Term Investment Grade Bond Fund (OUSG) invests its assets into the Blackrock’s iShares Short Treasury Bond ETF (SHV), a more than $23 billion ETF that trades several hundred million dollars a day, in order to deliver tokenized U.S. Treasuries exposure with direct stablecoin onramp and offramp">
+    <meta name="twitter:url" content="https://blog.ondo.finance/bond-etfs-bootstrapping-tokenized-securities/">
+    <meta name="twitter:image" content="https://blog.ondo.finance/content/images/size/w1200/2023/02/blog-4-1.png">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Nathan Allman">
+    <meta name="twitter:site" content="@OndoFinance">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="675">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Ondo Finance",
+        "url": "https://blog.ondo.finance/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://blog.ondo.finance/content/images/2022/12/Ondo-Logo-White-L-3.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Nathan Allman",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://blog.ondo.finance/content/images/2023/01/IMG_0848-4.JPG",
+            "width": 1024,
+            "height": 1024
+        },
+        "url": "https://blog.ondo.finance/author/nathan/",
+        "sameAs": []
+    },
+    "headline": "Bond ETFs vs Direct Bond Exposure in Tokenized Products",
+    "url": "https://blog.ondo.finance/bond-etfs-bootstrapping-tokenized-securities/",
+    "datePublished": "2023-03-28T14:56:45.000Z",
+    "dateModified": "2024-01-22T16:35:50.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://blog.ondo.finance/content/images/size/w1200/2023/02/blog-4-1.png",
+        "width": 1200,
+        "height": 675
+    },
+    "description": "The Ondo Short-Term Investment Grade Bond Fund (OUSG) invests its assets into the Blackrock’s iShares Short Treasury Bond ETF (SHV), a more than $23 billion ETF that trades several hundred million dollars a day, in order to deliver tokenized U.S. Treasuries exposure with direct stablecoin onramp and offramp support. Some of you may ask: why not just invest in U.S. Treasuries directly? In this post, we’ll answer that question, explaining why we opted to start with an ETF to scale OUSG to create a",
+    "mainEntityOfPage": "https://blog.ondo.finance/bond-etfs-bootstrapping-tokenized-securities/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.109">
+    <link rel="alternate" type="application/rss+xml" title="Ondo Finance" href="../rss/index.html">
+    <script defer src="https://cdn.jsdelivr.net/ghost/portal@~2.49/umd/portal.min.js" data-i18n="true" data-ghost="https://blog.ondo.finance/" data-key="170dc7cb9749947c01d2293137" data-api="https://ondo.ghost.io/ghost/api/content/" data-locale="en" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/sodo-search.min.js" data-key="170dc7cb9749947c01d2293137" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/main.css" data-sodo-search="https://ondo.ghost.io/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="https://blog.ondo.finance/webmentions/receive/" rel="webmention">
+    <script defer src="../public/cards.min.js%3Fv=6dd0abf84e"></script>
+    <link rel="stylesheet" type="text/css" href="../public/cards.min.css%3Fv=6dd0abf84e.css">
+    <script defer src="../public/member-attribution.min.js%3Fv=6dd0abf84e"></script><style>:root {--ghost-accent-color: #000000;}</style>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B0RH7LVSJF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B0RH7LVSJF');
+</script>
+</head>
+
+<body class="post-template is-head-b--a_n has-serif-body is-head-brand">
+    <div class="gh-site">
+        <header id="gh-head" class="gh-head gh-outer">
+            <div class="gh-head-inner gh-inner">
+                    <a class="gh-head-description" href="../index.html">Institutional-Grade Finance, Now Onchain.</a>
+
+                <div class="gh-head-brand">
+                    <a class="gh-head-logo" href="../index.html">
+                            <img src="../content/images/2022/12/Ondo-Logo-White-L-3.png" alt="Ondo Finance">
+
+                                <img src="../content/images/2022/12/Ondo-Logo-White-L.png" alt="Ondo Finance">
+                    </a>
+                    <button class="gh-burger"></button>
+                </div>
+
+                <nav class="gh-head-menu">
+                    <ul class="nav">
+    <li class="nav-blog"><a href="../index.html">Blog</a></li>
+    <li class="nav-launch-app"><a href="https://ondo.finance/">Launch App →</a></li>
+</ul>
+
+                </nav>
+
+                <div class="gh-head-actions">
+                        <a class="gh-head-btn gh-btn gh-primary-btn" href="index.html#/portal/signup" data-portal="signup">Subscribe</a>
+                </div>
+            </div>
+        </header>
+
+
+        
+<main class="gh-main">
+        <article class="gh-article post">
+            <header class="gh-article-header gh-canvas">
+
+                <h1 class="gh-article-title">Bond ETFs vs Direct Bond Exposure in Tokenized Products</h1>
+
+                    <aside class="gh-article-sidebar">
+            <figure class="gh-author-image">
+                    <img src="../content/images/2023/01/IMG_0848-4.JPG" alt="Nathan Allman">
+            </figure>
+
+            <h4 class="gh-author-name">
+                <a href="../author/nathan/index.html">Nathan Allman</a>
+            </h4>
+
+        <div class="gh-article-meta">
+            <time class="gh-article-date" datetime="2023-03-28">Mar 28, 2023</time>
+
+                <span class="gh-article-meta-sep"></span>
+                <span class="gh-article-length">3 min</span>
+        </div>
+    </aside>
+
+
+                    <figure class="gh-article-image">
+                        <img
+                            srcset="../content/images/size/w300/2023/02/blog-4-1.png 300w,
+                                   ../content/images/size/w720/2023/02/blog-4-1.pngg 720w,
+                                  ../content/images/size/w960/2023/02/blog-4-1.pngng 960w,
+                                 ../content/images/size/w1200/2023/02/blog-4-1.pngpng 1200w,
+                                ../content/images/size/w2000/2023/02/blog-4-1.png.png 2000w"
+                            sizes="(max-width: 1200px) 100vw, 1200px"
+                            src="../content/images/size/w1200/2023/02/blog-4-1.png"
+                            alt="Bond ETFs vs Direct Bond Exposure in Tokenized Products"
+                        >
+                    </figure>
+            </header>
+
+            <section class="gh-content gh-canvas">
+                <p>The <a href="https://ondo.finance/ousg?ref=blog.ondo.finance">Ondo Short-Term Investment Grade Bond Fund (OUSG)</a> invests its assets into the <a href="https://www.ishares.com/us/products/239466/ishares-short-treasury-bond-etf?ref=blog.ondo.finance">Blackrock’s iShares Short Treasury Bond ETF (SHV)</a>, a more than $23 billion ETF that trades several hundred million dollars a day, in order to deliver tokenized U.S. Treasuries exposure with direct stablecoin onramp and offramp support. Some of you may ask: why not just invest in U.S. Treasuries directly? In this post, we’ll answer that question, explaining why we opted to start with an ETF to scale OUSG to create a global, 24/7, real-time, and smart contract-compatible settlement layer on top of U.S. Treasuries.</p><h3 id="first-what-is-a-bond-etf">First, what is a bond ETF?</h3><p>A bond ETF is an exchange-traded fund that owns a portfolio of bonds.  A bond ETF typically tracks a specific index of securities, making it a passively managed index. For example, SHV tracks the <a href="https://www.theice.com/publicdocs/data/ICE-Indices_Short.pdf?ref=blog.ondo.finance">ICE Short U.S. Treasury Securities Index</a>.</p><p>What are the advantages and disadvantages of holding a bond ETF versus individual bonds?</p><h3 id="advantages">Advantages:</h3><ul><li>Bond ETFs provide investors an easy way to acquire a diversified bond portfolio and take significantly less effort and expertise to manage than creating a diversified portfolio of individual bonds.</li><li>Bond ETFs are managed by skilled investment professionals with access to best-in-class portfolio management techniques, technology, and research.</li><li>Bond ETF managers typically have better trade execution for the underlying bonds than smaller investors do for the same individual bonds.</li><li>Bond ETFs generally have better liquidity and price transparency than the bonds in their portfolio: bond ETFs are traded in public exchanges such as NYSE and NASDAQ while individual bonds are typically traded ‘over the counter’ between counterparties, often resulting in less transparency and liquidity.</li><li>Especially during fire sales, ETFs have proven to often be more liquid than their underliers, as Sébastien Derivaux points out in <a href="https://cryptobanking.network/the-crypto-banking-system/?ref=blog.ondo.finance">“The Crypto Banking System”</a>. He highlights that bond ETFs were much more liquid than their underliers during the Covid-19 crash.</li></ul><figure class="kg-card kg-image-card"><img src="https://lh3.googleusercontent.com/W-q7rak6bm3T3UPiJ3s9QjQhEV-3DPo2sgvTho-AES7ajLg3c2Szkm7pKVL_-Hk2eEU642Fn4mRNywBOv0R8o9CEVAvxMiuRnOcpyAiBiCLCm4_uNBcT0U_IoDXvQsAyejYUGfu7mNGnax7KdLrqF_Q" class="kg-image" alt="" loading="lazy" width="720" height="605"></figure><h3 id="disadvantages">Disadvantages:</h3><ul><li>The investor pays a fee for the bond ETF though these fees are generally low: for example, the bond ETF SHV, which OUSG invests in, has a 0.15% per year management fee.</li><li>The bond ETF investor is exposed to the price volatility of the bond ETF. Note, though, that liquid bond ETFs are typically priced almost identically to the aggregate price of the underlying bond portfolio. As such, an investor holding comparable individual bonds will face similar price volatility as the bond ETF investor. The individual bond investor, however, can hold its bonds until maturity, realizing the contractual bond payments. In contrast, the bond ETF investor cannot be assured of realizing the contractual payments of the current ETF bond portfolio, as the ETF manager continually reinvests portfolio cash flows.</li></ul><h3 id="wrapping-up">Wrapping Up</h3><p>In summary, bond ETFs are a great investment product, giving investors an easy, cost-efficient way to acquire a liquid, diversified bond portfolio. We felt that the market would be most comfortable with an established bond manager like Blackrock managing the OUSG U.S. Treasuries portfolio through an established, liquid ETF, and that it is well worth the 15 bps fee, for now. As we grow, it may make sense to engage Blackrock or a similar institution as a sub-advisor for OUSG, rather than using an independent ETF. We are also exploring offering to users who want greater control and are comfortable with the additional work the ability to buy single name Treasuries. Whatever we decide, we will always keep liquidity, stability, and scalability top of mind.</p><h3 id="about-ondo-finance">About Ondo Finance</h3><p>Ondo Finance provides institutional-grade, blockchain-enabled investment products and services. Ondo has a technology arm that develops decentralized finance technology as well as an asset management arm that creates and manages tokenized funds. If you would like to inquire about our products, please send an email to investors@ondo.finance. </p>
+            </section>
+        </article>
+
+    </main>
+
+        <footer class="gh-foot gh-outer">
+            <div class="gh-foot-inner gh-inner">
+                    <section class="gh-subscribe">
+                        <h4 class="gh-subscribe-title">Subscribe to Ondo Finance</h3>
+
+                            <div class="gh-subscribe-description">Don&#x27;t miss out on the latest news.</div>
+
+                        <button class="gh-subscribe-btn gh-btn" data-portal="signup"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3.33332 3.33334H16.6667C17.5833 3.33334 18.3333 4.08334 18.3333 5.00001V15C18.3333 15.9167 17.5833 16.6667 16.6667 16.6667H3.33332C2.41666 16.6667 1.66666 15.9167 1.66666 15V5.00001C1.66666 4.08334 2.41666 3.33334 3.33332 3.33334Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M18.3333 5L9.99999 10.8333L1.66666 5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> Subscribe now</button>
+                    </section>
+
+
+                <div class="gh-copyright">
+                        Ondo Finance © 2025</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="../assets/built/main.min.js%3Fv=6dd0abf84e"></script>
+
+    
+</body>
+
+</html>

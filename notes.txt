@@ -30,6 +30,6 @@ Next.js
 
 
 
-
+find x/docs.ondo.finance/ -type f -name "*.html" | sed 's|x/docs.ondo.finance/||'
 
 

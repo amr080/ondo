@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ondo Finance Admin Actions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Inter:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="../assets/built/screen.css%3Fv=6dd0abf84e.css">
+
+    <link rel="icon" href="../content/images/size/w256h256/2022/12/Ondo-Icon-Black-L.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="Ondo Finance">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ondo Finance Admin Actions">
+    <meta property="og:description" content="Dear Ondo Finance community,
+
+This past week we discovered a subtle bug in an audited contract that manages Sushiswap vaults for ETH/CVX and ETH/YGG. All customer funds are safe. All funds will be available to withdraw at the conclusion of these vaults’ 30 day terms.
+
+This bug required">
+    <meta property="og:url" content="https://blog.ondo.finance/ondo-finance-admin-actions/">
+    <meta property="og:image" content="https://blog.ondo.finance/content/images/size/w1200/2022/07/1_Ad8da0-dZ0Ga07lxrR9_uA.png">
+    <meta property="article:published_time" content="2021-10-31T20:01:00.000Z">
+    <meta property="article:modified_time" content="2024-01-22T16:25:38.000Z">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ondo Finance Admin Actions">
+    <meta name="twitter:description" content="Dear Ondo Finance community,
+
+This past week we discovered a subtle bug in an audited contract that manages Sushiswap vaults for ETH/CVX and ETH/YGG. All customer funds are safe. All funds will be available to withdraw at the conclusion of these vaults’ 30 day terms.
+
+This bug required">
+    <meta name="twitter:url" content="https://blog.ondo.finance/ondo-finance-admin-actions/">
+    <meta name="twitter:image" content="https://blog.ondo.finance/content/images/size/w1200/2022/07/1_Ad8da0-dZ0Ga07lxrR9_uA.png">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Ondo Finance">
+    <meta name="twitter:site" content="@OndoFinance">
+    <meta name="twitter:creator" content="@OndoFinance">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="617">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Ondo Finance",
+        "url": "https://blog.ondo.finance/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://blog.ondo.finance/content/images/2022/12/Ondo-Logo-White-L-3.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Ondo Finance",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://blog.ondo.finance/content/images/2022/07/Logo_dark-notextl.png",
+            "width": 171,
+            "height": 171
+        },
+        "url": "https://blog.ondo.finance/author/ondofinance/",
+        "sameAs": [
+            "https://ondo.finance/",
+            "https://twitter.com/OndoFinance"
+        ]
+    },
+    "headline": "Ondo Finance Admin Actions",
+    "url": "https://blog.ondo.finance/ondo-finance-admin-actions/",
+    "datePublished": "2021-10-31T20:01:00.000Z",
+    "dateModified": "2024-01-22T16:25:38.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://blog.ondo.finance/content/images/size/w1200/2022/07/1_Ad8da0-dZ0Ga07lxrR9_uA.png",
+        "width": 1200,
+        "height": 617
+    },
+    "description": "Dear Ondo Finance community,\n\nThis past week we discovered a subtle bug in an audited contract that manages Sushiswap vaults for ETH/CVX and ETH/YGG. All customer funds are safe. All funds will be available to withdraw at the conclusion of these vaults’ 30 day terms.\n\nThis bug required us to take certain admin actions on October 28 with the address controlling the guardian role in order to ensure expected return behavior, and we will have to take similar actions around the maturity dates of the ",
+    "mainEntityOfPage": "https://blog.ondo.finance/ondo-finance-admin-actions/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.109">
+    <link rel="alternate" type="application/rss+xml" title="Ondo Finance" href="../rss/index.html">
+    <script defer src="https://cdn.jsdelivr.net/ghost/portal@~2.49/umd/portal.min.js" data-i18n="true" data-ghost="https://blog.ondo.finance/" data-key="170dc7cb9749947c01d2293137" data-api="https://ondo.ghost.io/ghost/api/content/" data-locale="en" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/sodo-search.min.js" data-key="170dc7cb9749947c01d2293137" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/main.css" data-sodo-search="https://ondo.ghost.io/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="https://blog.ondo.finance/webmentions/receive/" rel="webmention">
+    <script defer src="../public/cards.min.js%3Fv=6dd0abf84e"></script>
+    <link rel="stylesheet" type="text/css" href="../public/cards.min.css%3Fv=6dd0abf84e.css">
+    <script defer src="../public/member-attribution.min.js%3Fv=6dd0abf84e"></script><style>:root {--ghost-accent-color: #000000;}</style>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B0RH7LVSJF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B0RH7LVSJF');
+</script>
+</head>
+
+<body class="post-template is-head-b--a_n has-serif-body is-head-brand">
+    <div class="gh-site">
+        <header id="gh-head" class="gh-head gh-outer">
+            <div class="gh-head-inner gh-inner">
+                    <a class="gh-head-description" href="../index.html">Institutional-Grade Finance, Now Onchain.</a>
+
+                <div class="gh-head-brand">
+                    <a class="gh-head-logo" href="../index.html">
+                            <img src="../content/images/2022/12/Ondo-Logo-White-L-3.png" alt="Ondo Finance">
+
+                                <img src="../content/images/2022/12/Ondo-Logo-White-L.png" alt="Ondo Finance">
+                    </a>
+                    <button class="gh-burger"></button>
+                </div>
+
+                <nav class="gh-head-menu">
+                    <ul class="nav">
+    <li class="nav-blog"><a href="../index.html">Blog</a></li>
+    <li class="nav-launch-app"><a href="https://ondo.finance/">Launch App →</a></li>
+</ul>
+
+                </nav>
+
+                <div class="gh-head-actions">
+                        <a class="gh-head-btn gh-btn gh-primary-btn" href="index.html#/portal/signup" data-portal="signup">Subscribe</a>
+                </div>
+            </div>
+        </header>
+
+
+        
+<main class="gh-main">
+        <article class="gh-article post">
+            <header class="gh-article-header gh-canvas">
+
+                <h1 class="gh-article-title">Ondo Finance Admin Actions</h1>
+
+                    <aside class="gh-article-sidebar">
+            <figure class="gh-author-image">
+                    <img src="../content/images/2022/07/Logo_dark-notextl.png" alt="Ondo Finance">
+            </figure>
+
+            <h4 class="gh-author-name">
+                <a href="../author/ondofinance/index.html">Ondo Finance</a>
+            </h4>
+
+        <div class="gh-article-meta">
+            <time class="gh-article-date" datetime="2021-10-31">Oct 31, 2021</time>
+
+                <span class="gh-article-meta-sep"></span>
+                <span class="gh-article-length">5 min</span>
+        </div>
+    </aside>
+
+
+                    <figure class="gh-article-image">
+                        <img
+                            srcset="../content/images/size/w300/2022/07/1_Ad8da0-dZ0Ga07lxrR9_uA.png 300w,
+                                   ../content/images/size/w720/2022/07/1_Ad8da0-dZ0Ga07lxrR9_uA.pngg 720w,
+                                  ../content/images/size/w960/2022/07/1_Ad8da0-dZ0Ga07lxrR9_uA.pngng 960w,
+                                 ../content/images/size/w1200/2022/07/1_Ad8da0-dZ0Ga07lxrR9_uA.pngpng 1200w,
+                                ../content/images/size/w2000/2022/07/1_Ad8da0-dZ0Ga07lxrR9_uA.png.png 2000w"
+                            sizes="(max-width: 1200px) 100vw, 1200px"
+                            src="../content/images/size/w1200/2022/07/1_Ad8da0-dZ0Ga07lxrR9_uA.png"
+                            alt="Ondo Finance Admin Actions"
+                        >
+                    </figure>
+            </header>
+
+            <section class="gh-content gh-canvas">
+                <p>Dear Ondo Finance community,</p><p>This past week we discovered a subtle bug in an audited contract that manages Sushiswap vaults for ETH/CVX and ETH/YGG. All customer funds are safe. All funds will be available to withdraw at the conclusion of these vaults’ 30 day terms.</p><p>This bug required us to take certain admin actions on October 28 with the address controlling the guardian role in order to ensure expected return behavior, and we will have to take similar actions around the maturity dates of the active vaults (Nov 1, Nov 3, and Nov 4).</p><h3 id="the-bug">The Bug</h3><p>The <a href="https://etherscan.io/address/0xdEA0bDfec2098eB48B6F5284CD9A3E831E7beb13?ref=blog.ondo.finance" rel="noopener ugc nofollow">SushiStakingv2Strategy contract</a> manages all vaults that invest in Sushiswap pools that use MasterChefV2 rewards. The contract is designed to periodically harvest liquidity mining rewards and reinvest them for more LP. In normal operations the contract does the following:</p><ol><li>collects all reward tokens (e.g., SUSHI and CVX)</li><li>converts them into a balanced amount of the LP assets (e.g., ETH and CVX)</li><li>invests both in the Sushiswap pool for LP tokens (e.g., ETH-CVX LP)</li><li>deposits those LP into MasterChefV2 to be able to receive more rewards.</li></ol><p>Unfortunately, a bug in step (2) transposed a swap from “tokenB to tokenA” to “tokenA to tokenB”. Where it was supposed to convert 387 CVX to ETH, it instead <a href="https://etherscan.io/tx/0x1be3cdbe8189ebb67a1ac3a7ade097d02bdff756786bbd4b3ca92ac73b150afb?ref=blog.ondo.finance" rel="noopener ugc nofollow">swapped</a> 387 ETH to 118,474 CVX. Normally this would fail because there isn’t enough ETH. This time it succeeded because there was a large amount of excess, uninvested ETH waiting to be claimed by users. The same thing happened with <a href="https://etherscan.io/tx/0x466ee2fc2c06cbfc9dc6442e6eb90e5ed3c707ff5874290e4039e7eedd3729f5?ref=blog.ondo.finance" rel="noopener ugc nofollow">YGG</a>, where 542 ETH was swapped for 236,601 YGG.</p><h3 id="the-fix">The Fix</h3><p>The solution was to manually rescue this inadvertently purchased CVX and YGG and swap both back to ETH so customers could claim their uninvested capital. The contract manages exactly how much ETH is required to handle redemptions. In this case we needed ~936 ETH. We decided to act quickly in selling the CVX and YGG for ETH so as not to put at risk the funds owed to vault depositors. Swapping both tokens yielded ~1053 ETH, more than enough to cover the ~936 ETH owed.</p><h3 id="upcoming-admin-actions">Upcoming Admin Actions</h3><p>The bug has rendered the code path for swapping reward tokens in the contract inoperable. Before we redeem the vaults at expiry, we must manually trigger the reward contracts to transfer CVX and YGG to the contract. Then, we must rescue these reward tokens from the contract.</p><p>When we redeem the vaults there will be no rewards. The contract will sell variable tranche assets to ensure the fixed tranche receives its share. Variable tranche holders will withdraw less CVX and YGG than they are due. However, we will manually send the correct share of reward tokens to all depositors from variable tranches.</p><p>In summary, fixed tranche depositors will receive their correct amount by design; variable tranche depositors will receive their fair share after manual disbursement of reward tokens.</p><h3 id="excess-eth">Excess ETH</h3><p>Since ETH was inadvertently sold for CVX before CVX went up in price, we ended up with ~120 ETH above what is owed to fixed and variable tranche depositors. We <a href="https://etherscan.io/tx/0x76472a043081300cd4d78c0f495bd8fe0d97b4f52d02c12d96a6c989dab1bd2f?ref=blog.ondo.finance" rel="noopener ugc nofollow">moved</a> this excess ETH to our Anchorage custody account for now, and will distribute it to variable tranche depositors pro rata with their deposited amounts around maturity of the vaults.</p><p>We believe that the only users with a clear claim on some of this excess are those who made subscription requests to ETH fixed tranches that were rejected and where the rejected ETH could not be claimed back for some time. To compensate those users for their opportunity cost, we plan to distribute to them yield in ETH at the rate of the fixed tranches they tried to subscribe to.</p><p>It is not clear to us what should be done with the remaining ETH after the above compensation. For now, we will move this ETH to a separate multi-sig and use it as an insurance pool to pay out users for any potential vulnerabilities. If and when there is a DAO, we will let DAO members decide what should be done with these funds, whether that means preserving them in an insurance pool or even, for example, retroactively distributing them to variable tranche users. While there are a lot of reasonable arguments to be made about different uses of these funds, we think the insurance pool preserves the greatest optionality.</p><h3 id="moving-forward">Moving Forward</h3><p>We take security very seriously and regret that this bug slipped through our testing and Quantstamp audit. We have 5x’d our number of tests since this audit. We will also continue to preserve certain admin functions behind a now 3/5 multi-sig until the protocol has been through more battle testing. Finally, we deeply apologize for the poor communication around the admin actions we took on October 28 and realize that this resulted in some completely understandable panic from our community. We will do better going forward.</p><p>We are deeply grateful to our community for their early adoption of Ondo Finance and for enduring some of these growing pains with us.</p><h3 id="legal-disclaimers">Legal Disclaimers</h3><p><em>This announcement has been written and published by Ondo Finance Inc. and provides no guarantee, commitment, or undertaking to utilize any of its assets, funds, properties or personnel, Ondo Protocol users or other protocol participants. Ondo Finance does not owe, and does not intend to assume, any duties or obligations to Ondo Protocol users or participants, other than duties or obligations arising under laws of general application, such as non-waivable torts.</em></p><p><em>To the maximum extent permitted by applicable law, all software relating to Ondo Protocol is being provided on an as-is, where-is basis, with no representations or warranties being made to Ondo Protocol participants and with no liability to Ondo Finance or any other person involved in the development of Ondo Protocol. The statements set forth in this announcement also are not intended to be representations, warranties, guarantees or assumptions of duty or liability of any kind, and Ondo Finance hereby disclaims the foregoing and will not be liable for any damages arising from use of Ondo Protocol. In the event of any conflict or inconsistency between this announcement or any other communication and the terms of any software license involved in Ondo Protocol, the terms of the software license shall govern to the exclusion of this announcement and such other communications.</em></p><p><em>The forward-looking statements in this announcement are subject to numerous assumptions, risks and uncertainties which are subject to change over time. Such assumptions, risks and uncertainties could cause actual results or developments to differ materially from the results and developments anticipated by us. Even if our anticipated results and developments are realized, such results and developments may nevertheless fail to achieve any or all of the expected benefits anticipated by this announcement. We reserve the right to change the plans, expectations and intentions stated and implied herein at any time and for any reason or no reason, in our sole and absolute discretion, and we undertake no obligation to update publicly or revise any forward-looking statement, whether as a result of new information, future developments or otherwise.</em></p><p><em>This announcement is not intended to provide legal, financial or investment or other advice and we recommend that you do not rely on, and do not make any financial or other decision based on this announcement.</em></p>
+            </section>
+        </article>
+
+    </main>
+
+        <footer class="gh-foot gh-outer">
+            <div class="gh-foot-inner gh-inner">
+                    <section class="gh-subscribe">
+                        <h4 class="gh-subscribe-title">Subscribe to Ondo Finance</h3>
+
+                            <div class="gh-subscribe-description">Don&#x27;t miss out on the latest news.</div>
+
+                        <button class="gh-subscribe-btn gh-btn" data-portal="signup"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3.33332 3.33334H16.6667C17.5833 3.33334 18.3333 4.08334 18.3333 5.00001V15C18.3333 15.9167 17.5833 16.6667 16.6667 16.6667H3.33332C2.41666 16.6667 1.66666 15.9167 1.66666 15V5.00001C1.66666 4.08334 2.41666 3.33334 3.33332 3.33334Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M18.3333 5L9.99999 10.8333L1.66666 5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> Subscribe now</button>
+                    </section>
+
+
+                <div class="gh-copyright">
+                        Ondo Finance © 2025</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="../assets/built/main.min.js%3Fv=6dd0abf84e"></script>
+
+    
+</body>
+
+</html>
