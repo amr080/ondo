@@ -1,17 +1,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 CashKYCSenderReceiver = OUSG
 OUSGInstantManager
 ROUSG

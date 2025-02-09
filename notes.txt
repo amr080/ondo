@@ -1,13 +1,11 @@
 ONDO FINANCE
-
-
 1 Ondo Short-Term US Government Bond Fund
 2 Ondo US Dollar Yield
 
 
-mkdir 
 
-
+product
+    tech
 ondo_short_term_us_government_bond_fund
 ondo_us_dollar_yield
 
@@ -15,5 +13,5 @@ ondo_us_dollar_yield
 
 
 RESOURCES
-
+https://github.com/code-423n4/2024-03-ondo-finance
 https://github.com/amr080/2023-09-ondo
