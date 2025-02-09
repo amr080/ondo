@@ -56,3 +56,10 @@ ondo-git-web-20250208-amr080s-projects.vercel.app/ondo.finance
 
 
 git push --set-upstream origin web-20250208
+
+
+chmod +x
+
+
+
+https://resolver-api.basename.app/v1/addresses/
