@@ -1,19 +1,18 @@
 {
+  "rewrites": [
+    { "source": "/_next/:path*", "destination": "/_next/:path*" },
+    { "source": "/api/:path*", "destination": "/api/:path*" },
+    { "source": "/:path*", "destination": "/:path*" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
         {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
         }
       ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/api/auth/:path*",
-      "destination": "/api/auth/session"
     }
   ]
 }
