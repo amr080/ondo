@@ -35,3 +35,32 @@ git add .gitattributes
 find x/docs.ondo.finance/ -type f -name "*.html" | sed 's|x/docs.ondo.finance/||'
 
 
+# Create vercel.json in root
+cat > vercel.json << 'EOF'
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/x/ondo.finance",
+      "destination": "/x/ondo.finance/index.html"
+    }
+  ]
+}
+EOF
+
+# Create public directory and move static files
+cd x/ondo.finance
+mkdir -p public/_next
+mv _next/* public/_next/
+mv icon.svg8db0fc230e9baadd public/icon.svg
+
+# Update paths in index.html
+sed -i 's/\"_next/\"\/x\/ondo.finance\/_next/g' index.html
+sed -i 's/icon.svg8db0fc230e9baadd/\/x\/ondo.finance\/icon.svg/g' index.html
+
+# Move back to root and commit
+cd ../..
+git add .
+git commit -m "Fix static file paths for vercel deployment"
+git push
