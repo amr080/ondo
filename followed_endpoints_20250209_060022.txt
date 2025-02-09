@@ -1,0 +1,59 @@
+]633;E;echo "Followed Endpoints Report - Generated on $(date)";ce78bd83-ee48-48a9-a434-3b655e7d6a46]633;CFollowed Endpoints Report - Generated on Sun Feb  9 06:00:22 UTC 2025
+------------------------------------------------------------
+Endpoint: /api/
+  Source not found.
+
+Endpoint: /api/WagmiProvider
+  Source not found.
+
+Endpoint: /api/accounts/
+  Source not found.
+
+Endpoint: /api/accounts/cookies
+  Source not found.
+
+Endpoint: /api/auth
+  Source: ./api/auth/session.js
+
+Endpoint: /api/auth/signin?
+  Source not found.
+
+Endpoint: /api/contact_us
+  Source not found.
+
+Endpoint: /api/glossary/Errors
+  Source not found.
+
+Endpoint: /api/human
+  Source not found.
+
+Endpoint: /api/ipcomply?restriction_type=
+  Source not found.
+
+Endpoint: /api/js?key=
+  Source not found.
+
+Endpoint: /api/oauth2/authorize
+  Source not found.
+
+Endpoint: /api/subscribe
+  Source not found.
+
+Endpoint: /api/v0
+  Source not found.
+
+Endpoint: /api/v1/
+  Source not found.
+
+Endpoint: /api/v1/chains/iota1pp3d3mnap3ufmgqnjsnw344sqmf5svjh26y2khnmc89sv6788y3r207a8fn/evm
+  Source not found.
+
+Endpoint: /api/v2
+  Source not found.
+
+Endpoint: /api/v5/explorer/xlayer/api
+  Source not found.
+
+Endpoint: restriction_type=
+  Not an API endpoint. Skipping.
+
