@@ -1,0 +1,13 @@
+{
+  "headers": [
+    {
+      "source": "/_next/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
+  ]
+}
