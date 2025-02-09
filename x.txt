@@ -1,0 +1,30 @@
+
+# Create new orphan branch (no parent commit)
+git checkout --orphan web-20250208
+
+# Remove all files from staging
+git rm -rf .
+
+# Create empty commit
+git commit --allow-empty -m "Initial commit"
+
+# Push new empty branch
+git push origin web-20250208
+
+
+https://ondo-finance-ad282fc.vercel.app/
+
+Base Directory
+https://ondo-finance-ad282fc.vercel.app/
+
+STEPS
+1 wget -r -k -E -l 10 -p -np -w 1 -e robots=off https://ondo.finance/
+2 uploaded to github repo
+3 /ondo.finance
+4 Deployed Vercel
+5 https://ondo-finance-ad282fc.vercel.app/
+6 https://ondo-finance-ad282fc.vercel.app/ondo.finance
+
+
+
+https://github.com/amr080/ondo/tree/web-20250208
