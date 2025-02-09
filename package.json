@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "validate": "node build-validate.js",
+    "test": "jest",
+    "build": "next build && npm run validate"
+  }
+}
