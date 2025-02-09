@@ -9,27 +9,20 @@ product
 ondo_short_term_us_government_bond_fund
 ondo_us_dollar_yield
 
-
+URL
+ondo-finance-ad282fc
 
 
 RESOURCES
 https://github.com/code-423n4/2024-03-ondo-finance
 https://github.com/amr080/2023-09-ondo
-
-
-
-
-URL
-ondo-finance-ad282fc
-
-
+https://github.com/X-Financial-Technologies/Library/tree/main/Ondo%20Finance
 
 VERCEL FOR HOSTING
 Next.js 
 
 
 
-https://github.com/X-Financial-Technologies/Library/tree/main/Ondo%20Finance
 
 
 
