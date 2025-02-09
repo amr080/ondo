@@ -12,8 +12,7 @@ git push -u origin import-20250208-001
 
 
 
-
-
+rm -rf ondo_short_term_us_government_bond_fund ondo_us_dollar_yield x
 
 
 
